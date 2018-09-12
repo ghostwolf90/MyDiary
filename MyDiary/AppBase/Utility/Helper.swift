@@ -13,7 +13,7 @@ struct Helper {
     static var homepage: UIViewController? {
         let board: UIStoryboard!
         board = UIStoryboard(name: "Main", bundle: nil)
-        return board.instantiateViewController(withIdentifier: "indexTabBarViewController") as! UITabBarController
+        return board.instantiateViewController(withIdentifier: "IndexViewController")
     }
     
     static var login: UIViewController? {

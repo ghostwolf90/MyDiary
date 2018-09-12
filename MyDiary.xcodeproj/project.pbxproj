@@ -18,6 +18,8 @@
 		3FED39342148CE62005831F9 /* RealmMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED392F2148CE62005831F9 /* RealmMigration.swift */; };
 		3FED39352148CE62005831F9 /* RLM_Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED39302148CE62005831F9 /* RLM_Record.swift */; };
 		3FED39362148CE62005831F9 /* RLM_User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED39312148CE62005831F9 /* RLM_User.swift */; };
+		3FED39382148D31B005831F9 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED39372148D31B005831F9 /* IndexViewController.swift */; };
+		3FED393B2148E73D005831F9 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED393A2148E73D005831F9 /* ItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		3FED392F2148CE62005831F9 /* RealmMigration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmMigration.swift; sourceTree = "<group>"; };
 		3FED39302148CE62005831F9 /* RLM_Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLM_Record.swift; sourceTree = "<group>"; };
 		3FED39312148CE62005831F9 /* RLM_User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLM_User.swift; sourceTree = "<group>"; };
+		3FED39372148D31B005831F9 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
+		3FED393A2148E73D005831F9 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		45154B3EB87DA17E3F2AD5AC /* Pods_MyDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B484265274CDEC56D6585EEB /* Pods-MyDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDiary.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDiary/Pods-MyDiary.release.xcconfig"; sourceTree = "<group>"; };
 		D80DF85363392B047507C890 /* Pods-MyDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDiary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDiary/Pods-MyDiary.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,9 +75,11 @@
 		3FED39142148CBD7005831F9 /* MyDiary */ = {
 			isa = PBXGroup;
 			children = (
+				3FED39392148E729005831F9 /* View */,
 				3FED39292148CE26005831F9 /* AppBase */,
 				3FED39152148CBD7005831F9 /* AppDelegate.swift */,
 				3FED39272148CDD9005831F9 /* LoginViewController.swift */,
+				3FED39372148D31B005831F9 /* IndexViewController.swift */,
 				3FED39192148CBD7005831F9 /* Main.storyboard */,
 				3FED391C2148CBD9005831F9 /* Assets.xcassets */,
 				3FED391E2148CBD9005831F9 /* LaunchScreen.storyboard */,
@@ -116,6 +122,14 @@
 				3FED39312148CE62005831F9 /* RLM_User.swift */,
 			);
 			path = RealmModel;
+			sourceTree = "<group>";
+		};
+		3FED39392148E729005831F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FED393A2148E73D005831F9 /* ItemTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		9110671A0071B39EB2FBF2DB /* Frameworks */ = {
@@ -266,8 +280,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FED39362148CE62005831F9 /* RLM_User.swift in Sources */,
+				3FED393B2148E73D005831F9 /* ItemTableViewCell.swift in Sources */,
 				3FED39342148CE62005831F9 /* RealmMigration.swift in Sources */,
 				3FED39332148CE62005831F9 /* DoubleExtension.swift in Sources */,
+				3FED39382148D31B005831F9 /* IndexViewController.swift in Sources */,
 				3FED39352148CE62005831F9 /* RLM_Record.swift in Sources */,
 				3FED39282148CDD9005831F9 /* LoginViewController.swift in Sources */,
 				3FED39162148CBD7005831F9 /* AppDelegate.swift in Sources */,
