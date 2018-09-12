@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DCAA2EE54A88442BD1EBAAE /* Pods_MyDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45154B3EB87DA17E3F2AD5AC /* Pods_MyDiary.framework */; };
 		3FED39162148CBD7005831F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED39152148CBD7005831F9 /* AppDelegate.swift */; };
-		3FED39182148CBD7005831F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED39172148CBD7005831F9 /* ViewController.swift */; };
 		3FED391B2148CBD7005831F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FED39192148CBD7005831F9 /* Main.storyboard */; };
 		3FED391D2148CBD9005831F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FED391C2148CBD9005831F9 /* Assets.xcassets */; };
 		3FED39202148CBD9005831F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FED391E2148CBD9005831F9 /* LaunchScreen.storyboard */; };
+		3FED39282148CDD9005831F9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED39272148CDD9005831F9 /* LoginViewController.swift */; };
+		3FED39322148CE62005831F9 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED392B2148CE62005831F9 /* Helper.swift */; };
+		3FED39332148CE62005831F9 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED392D2148CE62005831F9 /* DoubleExtension.swift */; };
+		3FED39342148CE62005831F9 /* RealmMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED392F2148CE62005831F9 /* RealmMigration.swift */; };
+		3FED39352148CE62005831F9 /* RLM_Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED39302148CE62005831F9 /* RLM_Record.swift */; };
+		3FED39362148CE62005831F9 /* RLM_User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED39312148CE62005831F9 /* RLM_User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3FED39122148CBD7005831F9 /* MyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FED39152148CBD7005831F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3FED39172148CBD7005831F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3FED391A2148CBD7005831F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FED391C2148CBD9005831F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FED391F2148CBD9005831F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FED39212148CBD9005831F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FED39272148CDD9005831F9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3FED392B2148CE62005831F9 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		3FED392D2148CE62005831F9 /* DoubleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		3FED392F2148CE62005831F9 /* RealmMigration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmMigration.swift; sourceTree = "<group>"; };
+		3FED39302148CE62005831F9 /* RLM_Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLM_Record.swift; sourceTree = "<group>"; };
+		3FED39312148CE62005831F9 /* RLM_User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLM_User.swift; sourceTree = "<group>"; };
+		45154B3EB87DA17E3F2AD5AC /* Pods_MyDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B484265274CDEC56D6585EEB /* Pods-MyDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDiary.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDiary/Pods-MyDiary.release.xcconfig"; sourceTree = "<group>"; };
+		D80DF85363392B047507C890 /* Pods-MyDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDiary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDiary/Pods-MyDiary.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DCAA2EE54A88442BD1EBAAE /* Pods_MyDiary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 			children = (
 				3FED39142148CBD7005831F9 /* MyDiary */,
 				3FED39132148CBD7005831F9 /* Products */,
+				95C2F5765A8B7D2F0C0117AA /* Pods */,
+				9110671A0071B39EB2FBF2DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +71,68 @@
 		3FED39142148CBD7005831F9 /* MyDiary */ = {
 			isa = PBXGroup;
 			children = (
+				3FED39292148CE26005831F9 /* AppBase */,
 				3FED39152148CBD7005831F9 /* AppDelegate.swift */,
-				3FED39172148CBD7005831F9 /* ViewController.swift */,
+				3FED39272148CDD9005831F9 /* LoginViewController.swift */,
 				3FED39192148CBD7005831F9 /* Main.storyboard */,
 				3FED391C2148CBD9005831F9 /* Assets.xcassets */,
 				3FED391E2148CBD9005831F9 /* LaunchScreen.storyboard */,
 				3FED39212148CBD9005831F9 /* Info.plist */,
 			);
 			path = MyDiary;
+			sourceTree = "<group>";
+		};
+		3FED39292148CE26005831F9 /* AppBase */ = {
+			isa = PBXGroup;
+			children = (
+				3FED392C2148CE62005831F9 /* Extension */,
+				3FED392E2148CE62005831F9 /* RealmModel */,
+				3FED392A2148CE62005831F9 /* Utility */,
+			);
+			path = AppBase;
+			sourceTree = "<group>";
+		};
+		3FED392A2148CE62005831F9 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3FED392B2148CE62005831F9 /* Helper.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		3FED392C2148CE62005831F9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3FED392D2148CE62005831F9 /* DoubleExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3FED392E2148CE62005831F9 /* RealmModel */ = {
+			isa = PBXGroup;
+			children = (
+				3FED392F2148CE62005831F9 /* RealmMigration.swift */,
+				3FED39302148CE62005831F9 /* RLM_Record.swift */,
+				3FED39312148CE62005831F9 /* RLM_User.swift */,
+			);
+			path = RealmModel;
+			sourceTree = "<group>";
+		};
+		9110671A0071B39EB2FBF2DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45154B3EB87DA17E3F2AD5AC /* Pods_MyDiary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95C2F5765A8B7D2F0C0117AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D80DF85363392B047507C890 /* Pods-MyDiary.debug.xcconfig */,
+				B484265274CDEC56D6585EEB /* Pods-MyDiary.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FED39242148CBD9005831F9 /* Build configuration list for PBXNativeTarget "MyDiary" */;
 			buildPhases = (
+				FF037A494128933B4811CDB5 /* [CP] Check Pods Manifest.lock */,
 				3FED390E2148CBD7005831F9 /* Sources */,
 				3FED390F2148CBD7005831F9 /* Frameworks */,
 				3FED39102148CBD7005831F9 /* Resources */,
+				D0E04D67E15CF189B29D9F03 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +203,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D0E04D67E15CF189B29D9F03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyDiary/Pods-MyDiary-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyDiary/Pods-MyDiary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF037A494128933B4811CDB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyDiary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3FED390E2148CBD7005831F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FED39182148CBD7005831F9 /* ViewController.swift in Sources */,
+				3FED39362148CE62005831F9 /* RLM_User.swift in Sources */,
+				3FED39342148CE62005831F9 /* RealmMigration.swift in Sources */,
+				3FED39332148CE62005831F9 /* DoubleExtension.swift in Sources */,
+				3FED39352148CE62005831F9 /* RLM_Record.swift in Sources */,
+				3FED39282148CDD9005831F9 /* LoginViewController.swift in Sources */,
 				3FED39162148CBD7005831F9 /* AppDelegate.swift in Sources */,
+				3FED39322148CE62005831F9 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +413,7 @@
 		};
 		3FED39252148CBD9005831F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D80DF85363392B047507C890 /* Pods-MyDiary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +432,7 @@
 		};
 		3FED39262148CBD9005831F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B484265274CDEC56D6585EEB /* Pods-MyDiary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
