@@ -9,7 +9,7 @@ target 'MyDiary' do
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'FacebookShare'
-  pod 'RealmSwift','~> 3.0.2'
+  pod 'RealmSwift'
   pod 'ObjectMapper'
 
 

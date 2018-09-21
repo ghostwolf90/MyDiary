@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2DCAA2EE54A88442BD1EBAAE /* Pods_MyDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45154B3EB87DA17E3F2AD5AC /* Pods_MyDiary.framework */; };
+		3F9CE9C2214A0C6C00414BD6 /* EntryDeatilView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F9CE9C0214A0C6C00414BD6 /* EntryDeatilView.xib */; };
+		3F9CE9C4214A0C8600414BD6 /* EntryDeatilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CE9C3214A0C8600414BD6 /* EntryDeatilView.swift */; };
+		3F9CE9C6214A105E00414BD6 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CE9C5214A105E00414BD6 /* ColorExtension.swift */; };
 		3FED39162148CBD7005831F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED39152148CBD7005831F9 /* AppDelegate.swift */; };
 		3FED391B2148CBD7005831F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FED39192148CBD7005831F9 /* Main.storyboard */; };
 		3FED391D2148CBD9005831F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FED391C2148CBD9005831F9 /* Assets.xcassets */; };
@@ -20,9 +23,15 @@
 		3FED39362148CE62005831F9 /* RLM_User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED39312148CE62005831F9 /* RLM_User.swift */; };
 		3FED39382148D31B005831F9 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED39372148D31B005831F9 /* IndexViewController.swift */; };
 		3FED393B2148E73D005831F9 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED393A2148E73D005831F9 /* ItemTableViewCell.swift */; };
+		3FED393D2148F255005831F9 /* EntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED393C2148F255005831F9 /* EntriesViewController.swift */; };
+		3FED393F21490F8E005831F9 /* EntriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED393E21490F8E005831F9 /* EntriesTableViewCell.swift */; };
+		3FED394121491267005831F9 /* CALayerExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED394021491267005831F9 /* CALayerExtenstion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F9CE9C0214A0C6C00414BD6 /* EntryDeatilView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EntryDeatilView.xib; sourceTree = "<group>"; };
+		3F9CE9C3214A0C8600414BD6 /* EntryDeatilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDeatilView.swift; sourceTree = "<group>"; };
+		3F9CE9C5214A105E00414BD6 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		3FED39122148CBD7005831F9 /* MyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FED39152148CBD7005831F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FED391A2148CBD7005831F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,6 +46,9 @@
 		3FED39312148CE62005831F9 /* RLM_User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLM_User.swift; sourceTree = "<group>"; };
 		3FED39372148D31B005831F9 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		3FED393A2148E73D005831F9 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		3FED393C2148F255005831F9 /* EntriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesViewController.swift; sourceTree = "<group>"; };
+		3FED393E21490F8E005831F9 /* EntriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesTableViewCell.swift; sourceTree = "<group>"; };
+		3FED394021491267005831F9 /* CALayerExtenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExtenstion.swift; sourceTree = "<group>"; };
 		45154B3EB87DA17E3F2AD5AC /* Pods_MyDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B484265274CDEC56D6585EEB /* Pods-MyDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDiary.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDiary/Pods-MyDiary.release.xcconfig"; sourceTree = "<group>"; };
 		D80DF85363392B047507C890 /* Pods-MyDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDiary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDiary/Pods-MyDiary.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,11 +87,12 @@
 		3FED39142148CBD7005831F9 /* MyDiary */ = {
 			isa = PBXGroup;
 			children = (
-				3FED39392148E729005831F9 /* View */,
 				3FED39292148CE26005831F9 /* AppBase */,
+				3FED39392148E729005831F9 /* View */,
 				3FED39152148CBD7005831F9 /* AppDelegate.swift */,
 				3FED39272148CDD9005831F9 /* LoginViewController.swift */,
 				3FED39372148D31B005831F9 /* IndexViewController.swift */,
+				3FED393C2148F255005831F9 /* EntriesViewController.swift */,
 				3FED39192148CBD7005831F9 /* Main.storyboard */,
 				3FED391C2148CBD9005831F9 /* Assets.xcassets */,
 				3FED391E2148CBD9005831F9 /* LaunchScreen.storyboard */,
@@ -109,6 +122,8 @@
 		3FED392C2148CE62005831F9 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				3F9CE9C5214A105E00414BD6 /* ColorExtension.swift */,
+				3FED394021491267005831F9 /* CALayerExtenstion.swift */,
 				3FED392D2148CE62005831F9 /* DoubleExtension.swift */,
 			);
 			path = Extension;
@@ -128,6 +143,9 @@
 			isa = PBXGroup;
 			children = (
 				3FED393A2148E73D005831F9 /* ItemTableViewCell.swift */,
+				3FED393E21490F8E005831F9 /* EntriesTableViewCell.swift */,
+				3F9CE9C3214A0C8600414BD6 /* EntryDeatilView.swift */,
+				3F9CE9C0214A0C6C00414BD6 /* EntryDeatilView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,6 +229,7 @@
 			files = (
 				3FED39202148CBD9005831F9 /* LaunchScreen.storyboard in Resources */,
 				3FED391D2148CBD9005831F9 /* Assets.xcassets in Resources */,
+				3F9CE9C2214A0C6C00414BD6 /* EntryDeatilView.xib in Resources */,
 				3FED391B2148CBD7005831F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,11 +298,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9CE9C4214A0C8600414BD6 /* EntryDeatilView.swift in Sources */,
+				3FED394121491267005831F9 /* CALayerExtenstion.swift in Sources */,
 				3FED39362148CE62005831F9 /* RLM_User.swift in Sources */,
 				3FED393B2148E73D005831F9 /* ItemTableViewCell.swift in Sources */,
 				3FED39342148CE62005831F9 /* RealmMigration.swift in Sources */,
+				3F9CE9C6214A105E00414BD6 /* ColorExtension.swift in Sources */,
+				3FED393D2148F255005831F9 /* EntriesViewController.swift in Sources */,
 				3FED39332148CE62005831F9 /* DoubleExtension.swift in Sources */,
 				3FED39382148D31B005831F9 /* IndexViewController.swift in Sources */,
+				3FED393F21490F8E005831F9 /* EntriesTableViewCell.swift in Sources */,
 				3FED39352148CE62005831F9 /* RLM_Record.swift in Sources */,
 				3FED39282148CDD9005831F9 /* LoginViewController.swift in Sources */,
 				3FED39162148CBD7005831F9 /* AppDelegate.swift in Sources */,

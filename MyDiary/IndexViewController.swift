@@ -32,7 +32,6 @@ class IndexViewController: UIViewController {
         let imageView = UIImageView(image: image)
         imageView.frame = CGRect(x: 0, y: 0, width: 375, height: 110)
         headView.addSubview(imageView)
-        
     }
     
     func initData(){
@@ -62,7 +61,7 @@ extension IndexViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return itemTitles.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -70,6 +69,17 @@ extension IndexViewController: UITableViewDataSource, UITableViewDelegate {
         imageCell.setData(image: UIImage(), title: itemTitles[indexPath.row], quantity:"1")
         
         return imageCell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            let entriesViewController = self.storyboard?.instantiateViewController(withIdentifier: "EntriesViewController") as!
+            EntriesViewController
+            present(entriesViewController, animated: true, completion: nil)            
+        default:
+            break
+        }
     }
     
     
