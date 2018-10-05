@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 enum DiaryStatus {
     case read
@@ -22,10 +23,12 @@ class EntriesViewController: UIViewController {
     
     private var entryDeatilView:EntryDeatilView!
     private var viewMask : UIView!
+    private var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
+        setLocation()
     }
     
     func initView(){
@@ -41,6 +44,13 @@ class EntriesViewController: UIViewController {
         viewMask.backgroundColor = UIColor.QlieerStyleGuide.qlrMask
         viewMask.isHidden = true
         self.view.addSubview(viewMask)
+    }
+    
+    func setLocation(){
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
     }
     
     @IBAction func favoritePressed(_ sender: UIButton) {
@@ -62,7 +72,7 @@ class EntriesViewController: UIViewController {
         let screenSize = window.frame.size
         let scannViewSize = CGSize(width: 330, height: 470)
         let rect = CGRect(x: (screenSize.width/2) - (scannViewSize.width / 2), y: (screenSize.height/2) - (scannViewSize.height/2), width: scannViewSize.width, height: scannViewSize.height)
-        entryDeatilView = EntryDeatilView(frame: rect)
+        entryDeatilView = EntryDeatilView(frame: rect, diaryStatus: diaryStatus)
         entryDeatilView.delegate = self
         window.addSubview(entryDeatilView)
         entryDeatilView.center.y = screenSize.height + 100
@@ -74,6 +84,42 @@ class EntriesViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()        
     }
+}
+
+extension EntriesViewController: CLLocationManagerDelegate{
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let userLocation: CLLocation = locations[0]
+        //CLGeocoder地理編碼 經緯度轉換地址位置
+        CLGeocoder().reverseGeocodeLocation(userLocation) { (placemark, error) in
+            if error == nil{
+                if let placemark = placemark?[0] {
+                    //print(placemark)
+                    var address = ""
+                    if placemark.subThoroughfare != nil {
+                        address += placemark.subThoroughfare! + " "
+                    }
+                    if placemark.thoroughfare != nil {
+                        address += placemark.thoroughfare! + "\n"
+                    }
+                    if placemark.subLocality != nil {
+                        address += placemark.subLocality! + "\n"
+                    }
+                    if placemark.subAdministrativeArea != nil {
+                        address += placemark.subAdministrativeArea! + "\n"
+                    }
+                    if placemark.postalCode != nil {
+                        address += placemark.postalCode! + "\n"
+                    }
+                    if placemark.country != nil {
+                        address += placemark.country!
+                    }
+                    print(String(address))
+                }
+            }
+        }
+    }
+    
 }
 
 extension EntriesViewController: EntryDeatilViewDelegate{

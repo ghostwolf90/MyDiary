@@ -23,6 +23,12 @@ class EntryDeatilView: UIView {
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet var view: UIView!
     
+    @IBOutlet weak var monthLabel: UILabel!
+    @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var weekAndYearLabel: UILabel!
+    @IBOutlet weak var weatherAndLocationLabel: UILabel!
+    
+    
     override public init(frame: CGRect){
         super.init(frame: frame)
         self.setup()
@@ -31,6 +37,12 @@ class EntryDeatilView: UIView {
     required public init?(coder aDecoder: NSCoder){
         super.init(coder: aDecoder)
         self.setup()
+    }
+    
+    convenience init(frame: CGRect, diaryStatus:DiaryStatus) {
+        self.init(frame: frame)
+        setup()
+        showTime(diaryStatus: diaryStatus)
     }
     
     private func setup() {
@@ -49,6 +61,19 @@ class EntryDeatilView: UIView {
         view.layer.roundCorners([.topLeft, .topRight, .bottomLeft, .bottomRight], radius: 12)
         topView.layer.roundCorners([.topLeft,.topRight], radius: 12)
         bottomView.layer.roundCorners([.bottomLeft, .bottomRight], radius: 12)
+    }
+    
+    func showTime(diaryStatus:DiaryStatus){
+        switch diaryStatus {
+        case .add:
+            let (year, month, day, week, _) = Helper.generateNowTimes()
+            monthLabel.text = "\(month)"
+            dayLabel.text = "\(day)"
+            weekAndYearLabel.text = "\(week)  \(year)"
+        default:
+            break
+        }
+        
     }
     
     @IBAction func closePressed(_ sender: UIButton) {
